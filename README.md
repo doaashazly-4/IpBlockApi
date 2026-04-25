@@ -1,4 +1,4 @@
-## IP Block API System (.NET 8)
+# IP Block API System (.NET 8)
 
 ## Overview
 This is a RESTful Web API built using .NET 8 that manages IP geolocation and country-based blocking (permanent and temporary) using in-memory storage (no database).
@@ -17,33 +17,30 @@ This is a RESTful Web API built using .NET 8 that manages IP geolocation and cou
 ## Tech Stack
 - .NET 8 Web API  
 - C#  
-- In-Memory Storage  
+- In-Memory Storage (ConcurrentDictionary)  
 - Dependency Injection  
 - HttpClientFactory  
-- Swagger
-
-## API Testing
-Open Swagger UI:
-
-http://localhost:5020/swagger
+- Background Services  
+- Swagger  
 
 ---
 
-## ▶️ How to Run
+## Architecture
+Controllers → Services → Repositories → External APIs → Background Services
+
+---
+
+📖 API Testing
+
+Open Swagger UI:
+http://localhost:5020/swagger
+
+
+## How to Run
 
 ```bash
 git clone https://github.com/doaashazly-4/IpBlockApi.git
 cd IpBlockApi
 dotnet restore
-dotnet run ```
-##
----
-## API Testing
-Open Swagger UI:
-
-http://localhost:5020/swagger
-
----
-
-## Author
-Doaa Shazly
+dotnet build
+dotnet run
