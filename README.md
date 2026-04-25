@@ -20,7 +20,12 @@ This is a RESTful Web API built using .NET 8 that manages IP geolocation and cou
 - In-Memory Storage  
 - Dependency Injection  
 - HttpClientFactory  
-- Swagger  
+- Swagger
+
+## API Testing
+Open Swagger UI:
+
+http://localhost:5020/swagger
 
 ---
 
@@ -32,12 +37,6 @@ cd IpBlockApi
 dotnet restore
 dotnet run
 
-## API Testing
-Open Swagger UI:
 
-http://localhost:5020/swagger
-
----
-
-## Author
+ Author
 Doaa Shazly
