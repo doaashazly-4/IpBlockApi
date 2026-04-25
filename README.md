@@ -33,7 +33,7 @@ Controllers → Services → Repositories → External APIs → Background Servi
 📖 API Testing
 
 Open Swagger UI:
-http://localhost:5020/swagger
+http://localhost:5020/swagger/index.html
 
 
 ## How to Run
