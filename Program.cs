@@ -1,5 +1,6 @@
 using System.Net.Http.Headers;
 using IpBlockApi.Background;
+using IpBlockApi.Middleware;
 using IpBlockApi.Options;
 using IpBlockApi.Repositories;
 using IpBlockApi.Services;
@@ -41,6 +42,8 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseForwardedHeaders();
 
