@@ -29,7 +29,7 @@ http://localhost:5020/swagger
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
 ```bash
 git clone https://github.com/doaashazly-4/IpBlockApi.git
@@ -38,5 +38,13 @@ dotnet restore
 dotnet run
 
 
- Author
+---
+## API Testing
+Open Swagger UI:
+
+http://localhost:5020/swagger
+
+---
+
+## Author
 Doaa Shazly
